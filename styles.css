@@ -4,6 +4,36 @@
   height: 300px;
   animation: rotate 20s linear infinite;
 }
+body {
+  margin: 0;
+  background-color: #87ceeb; /* baby blue */
+  overflow: hidden;
+}
+
+#game-area {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#galaxy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 
 @keyframes rotate {
   0% {
