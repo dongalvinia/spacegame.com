@@ -1,12 +1,12 @@
-// src/App.jsx
-import './styles.css';
+import React from "react";
+import "./style.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <img src="/galaxy.png" className="galaxy" alt="Galaxy" />
+    <div className="space">
+      <img src="/galaxy.png" alt="Galaxy" id="galaxy" />
     </div>
   );
-}
+};
 
 export default App;
