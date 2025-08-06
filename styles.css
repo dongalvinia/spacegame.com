@@ -1,29 +1,23 @@
-/* styles.css */
-.galaxy {
-  width: 300px;
-  height: 300px;
-  animation: rotate 20s linear infinite;
-}
 body {
   margin: 0;
-  background-color: #87ceeb; /* baby blue */
+  background-color: black;
   overflow: hidden;
 }
 
-#game-area {
+.space {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  position: relative;
 }
 
 #galaxy {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 200px;
+  width: 800px;
+  height: 800px;
   transform: translate(-50%, -50%);
-  animation: spin 20s linear infinite;
+  animation: spin 60s linear infinite;
 }
 
 @keyframes spin {
@@ -32,14 +26,5 @@ body {
   }
   to {
     transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
