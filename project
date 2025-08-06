@@ -1,0 +1,6 @@
+npm create vite@latest my-galaxy-app --template react
+cd my-galaxy-app
+npm install
+
+public/galaxy.png
+
